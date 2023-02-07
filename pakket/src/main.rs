@@ -1,9 +1,25 @@
-use clap::Parser;
+use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-struct Args;
+struct Args {
+    #[command(subcommand)]
+    command: Option<Command>,
+}
+
+#[derive(Subcommand)]
+enum Command {
+    /// Install package(s)
+    #[clap(alias = "i")]
+    Install,
+    /// Update package(s)
+    #[clap(alias = "u")]
+    Update,
+}
 
 fn main() {
-    Args::parse();
-    todo!();
+    let args = Args::parse();
+    match args.command {
+        Some(Command::Update) | None => todo!(),
+        Some(_) => todo!(),
+    };
 }
