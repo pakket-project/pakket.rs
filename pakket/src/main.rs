@@ -19,7 +19,7 @@ enum Command {
 fn main() {
     let args = Args::parse();
     match args.command {
-        Some(Command::Update) | None => todo!(),
-        Some(_) => todo!(),
+        Some(Command::Install) => todo!("install"),
+        Some(Command::Update) | None => todo!("update"),
     };
 }

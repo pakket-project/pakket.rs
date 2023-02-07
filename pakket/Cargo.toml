@@ -3,6 +3,7 @@ name = "pakket"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
-clap = { version = "4.1.4", features = ["derive"] }
-semver = "1.0.16"
+[dependencies.clap]
+version = "4.1.4"
+default-features = false
+features = ["std", "help", "usage", "suggestions", "derive"]

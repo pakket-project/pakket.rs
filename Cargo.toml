@@ -1,3 +1,3 @@
 [workspace]
-members = ["pakket"]
+members = ["pakket", "pakket-core"]
 default-members = ["pakket"]
