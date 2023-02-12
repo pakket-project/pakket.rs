@@ -4,6 +4,8 @@ The last package manager macOS will ever need. Simple, functional, and fast.
 
 > ⚠️ This project is still a work-in-progress.
 
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
+
 ## License
 
 Licensed under either of
