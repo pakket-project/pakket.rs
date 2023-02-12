@@ -1,0 +1,15 @@
+[package]
+name = "pakket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pakket-core = { path = "../pakket-core" }
+directories = "4.0.1"
+toml = "0.7.2"
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.clap]
+version = "4.1.4"
+default-features = false
+features = ["std", "help", "usage", "suggestions", "derive"]
