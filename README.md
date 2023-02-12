@@ -1,6 +1,9 @@
 # pakket
 
-The last package manager macOS will ever need. Simple, functional, and fast.
+The last package manager macOS will ever need.
+Built with simplicity, functionality, and speed in mind.
+
+The new alternative to Homebrew, MacPorts and Fink.
 
 > ⚠️ This project is still a work-in-progress.
 
@@ -22,3 +25,7 @@ at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
+
+## Sponsors
+
+Build machines sponsored by the [MacStadium Open Source Program](https://www.macstadium.com/opensource).
