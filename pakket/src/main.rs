@@ -3,6 +3,7 @@ mod commands;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
+#[command(version, about = "pakket is a package manager for macOS")]
 struct Args {
     #[command(subcommand)]
     command: Option<Command>,
