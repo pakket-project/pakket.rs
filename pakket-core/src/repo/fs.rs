@@ -1,4 +1,6 @@
 use std::{
+    error::Error,
+    fmt::Display,
     fs, io,
     path::{Path, PathBuf},
 };
@@ -12,10 +14,19 @@ pub struct FsRepository {
     path: PathBuf,
 }
 
+#[derive(Debug)]
 pub enum FsError {
     IO(io::Error),
     Deserialize(toml::de::Error),
 }
+
+impl Display for FsError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "filesystem error: {:?}", self)
+    }
+}
+
+impl Error for FsError {}
 
 impl From<io::Error> for FsError {
     fn from(err: io::Error) -> Self {

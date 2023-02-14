@@ -146,7 +146,6 @@ name = "pakket"
 version = "0.1.0"
 dependencies = [
  "clap",
- "directories",
  "pakket-core",
  "serde",
  "toml",
@@ -156,6 +155,7 @@ dependencies = [
 name = "pakket-core"
 version = "0.1.0"
 dependencies = [
+ "directories",
  "semver",
  "serde",
  "toml",
